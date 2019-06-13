@@ -1,0 +1,34 @@
+body {
+	background: #76b852;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin: auto;
+	max-width: 45em;
+
+}
+
+header {
+	padding: 1rem;
+	box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+	background: #76B852;
+}
+
+header input {
+	color: #000;
+	text-indent: 1.5rem;
+	padding: 0 20px 0 0;
+	background: #FFF;
+	border-radius: 5px 25px 25px 5px;
+	border: 0px;
+	height: 3rem;
+	width: 99%;
+}
+
+header button {
+	border-radius: 25px;
+	background: #FFF;
+	border: 0px;
+	height: 3rem;
+	width: 3rem;
+	cursor: pointer;
+}
