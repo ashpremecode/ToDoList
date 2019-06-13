@@ -32,3 +32,59 @@ header button {
 	width: 3rem;
 	cursor: pointer;
 }
+
+.buttons {
+	float: right;
+}
+
+.buttons button {
+	cursor: pointer;
+	border: .15rem solid transparent;
+	vertical-align: middle;
+	width: 2rem;
+	height: 2rem;
+	transition: background .2s. ease; 
+}
+
+.buttons button.complete {
+	border: 0.1rem solid #228B22;
+}
+
+.buttons button.complete:hover {
+	background: #FFF;
+}
+
+.buttons button.remove {
+	background: #C0CECB;
+}
+
+.buttons button.remove:hover {
+	background: #e85656;
+}
+
+.todo li {
+	color: #333;
+	background: #FFF;
+	border-radius: 0.5rem;
+	box-shadow: 0 1px 2px rgba(44, 62, 80, .1);
+	margin-bottom: 1rem;
+	padding: 1.5rem;
+	word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
