@@ -1,76 +1,100 @@
-body {
+body{
 	background: #76b852;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	margin: auto;
+	margin:auto;
 	max-width: 45em;
-
 }
 
-header {
-	padding: 1rem;
-	box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
-	background: #76B852;
+header{
+	padding:1rem;
+	box-shadow 0 2px 4px rgba(44,62,80,.15);
+	background:#76b852;
 }
 
-header input {
-	color: #000;
-	text-indent: 1.5rem;
-	padding: 0 20px 0 0;
-	background: #FFF;
-	border-radius: 5px 25px 25px 5px;
-	border: 0px;
+header input{
+	color:#000;
+	text-indent:1.5rem;
+	padding:0 60px 0 0;
+	background: rgba(255,255,255,.2);
+	border-radius:5px 25px 25px 5px;
+	border:0;
 	height: 3rem;
-	width: 99%;
+	width:99%;
 }
 
-header button {
+header button{
 	border-radius: 25px;
-	background: #FFF;
-	border: 0px;
-	height: 3rem;
-	width: 3rem;
-	cursor: pointer;
+	background:#F2994A;
+	border:0;
+	height:3rem;
+	width:3rem;
+	cursor:pointer;
+	margin:-3rem;
 }
 
-.buttons {
-	float: right;
-}
-
-.buttons button {
-	cursor: pointer;
-	border: .15rem solid transparent;
+.buttons { float:right; }
+.buttons button{
+	cursor:pointer;
+	border:.15rem solid transparent;
 	vertical-align: middle;
-	width: 2rem;
-	height: 2rem;
-	transition: background .2s. ease; 
+	width:2rem;
+	height:2rem;
+	transition: background .2s ease;
+	}
+
+.buttons button.complete{
+	border: 0.1rem solid #000;
+	background:#228b22;
 }
 
-.buttons button.complete {
-	border: 0.1rem solid #228B22;
+.buttons button.complete:hover{
+	background:#fff;
 }
 
-.buttons button.complete:hover {
-	background: #FFF;
-}
-
-.buttons button.remove {
-	background: #C0CECB;
-}
-
-.buttons button.remove:hover {
+.buttons button.remove{
 	background: #e85656;
+	border: 0.1rem solid #000;
+}
+.buttons button.remove:hover{
+	background:#fff;
 }
 
-.todo li {
-	color: #333;
-	background: #FFF;
+.todo li{
+	color:#000;
+	background: #F2994A;  /* fallback for old browsers */
 	border-radius: 0.5rem;
-	box-shadow: 0 1px 2px rgba(44, 62, 80, .1);
-	margin-bottom: 1rem;
+	box-shadow: 0 1px 2px rgba(44,62,80,.1);
+	margin-bottom:1rem;
 	padding: 1.5rem;
 	word-wrap: break-word;
 }
+
+#completed li{
+	background: #edf0f1;
+	opacity: .5;
+}
+
+#completed:after, #todo:after{
+	text-align:center;
+	color:silver;
+	display:block;
+}
+
+
+#completed:empty:after{
+	margin-top: 20px;
+	color: #000;
+	content:'" the secret of getting ahead is getting started "';
+
+
+
+
+
+
+
+
+
 
 
 

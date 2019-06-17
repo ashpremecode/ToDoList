@@ -65,10 +65,6 @@ function update_item(search){
 	}
 }
 
-
-
-
-
 function add_item() {
 	if(!item.value) return;
 	var current_item = {
